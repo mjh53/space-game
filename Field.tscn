@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Turret.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Base.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
+
+[node name="Field" type="Node2D"]
+
+[node name="Turret" parent="." instance=ExtResource( 1 )]
+position = Vector2( 230, 363 )
+
+[node name="Base" parent="." instance=ExtResource( 2 )]
+position = Vector2( 501, 286 )
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 82, 108 )
